@@ -33,7 +33,9 @@ node
 	{
 		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'c309e468-058f-4f01-b986-84e9270eb8bb', url: 'https://github.com/Wilsonsmi/PytestJenkins']]])
 		workspace =pwd()
-		echo workspace	 
+		echo 'Static code77'
+		echo workspace
+		echo 'Static code44'
 	}
 	stage('static code analysis')
 	{
