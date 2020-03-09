@@ -50,7 +50,7 @@ node
 		}
 	}
 	
-	stage('static code analysis')
+	stage('static code analysiseeee')
 	{
 		echo 'Static code'
 		dir('pytest') {
