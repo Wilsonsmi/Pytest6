@@ -54,7 +54,7 @@ node
 	{
 		echo 'Static code'
 		dir('pytest') {
-			sh 'virtualenv -p . /bin/python3 venv'
+			sh 'virtualenv -p . python/pytest/bin/python3 venv'
 			sh '. /python/pytest/bin/activate && pip install -U pytest'
 			sh '. /python/pytest/bin/activate && pip install -r requirements.txt'
 			sh '. /python/pytest/bin/activate && py.test --junit-xml=test_results.xml test || true'
