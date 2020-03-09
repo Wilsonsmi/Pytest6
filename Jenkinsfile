@@ -49,6 +49,19 @@ node
 			junit keepLongStdio: true, allowEmptyResults: true, testResults: 'test_results.xml'
 		}
 	}
+	
+	stage('static code analysis')
+	{
+		echo 'Static code'
+		dir('pytest') {
+			sh 'virtualenv -p /python/pytest/bin/python3 venv'
+			sh '. /python/pytest/bin/activate && pip install -U pytest'
+			sh '. /python/pytest/bin/activate && pip install -r requirements.txt'
+			sh '. /python/pytest/bin/activate && py.test --junit-xml=test_results.xml test || true'
+			//py.test "./python/pytest/test/test_simple_example.py" --junit-xml=test_results.xml || true
+			junit keepLongStdio: true, allowEmptyResults: true, testResults: 'test_results.xml'
+		}
+	}
 	stage('Static code1')
 	{
 		echo 'Static code1'
