@@ -8,6 +8,9 @@
 
 
 class PythonPytestSimpleTest():
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    command_executor="http://127.0.0.1:8080/wd/hub", desired_capabilities=chrome_options.to_capabilities()
 #     """A simple Selenium example test with Python and pytest."""
 
 #     # def setUp(self):
