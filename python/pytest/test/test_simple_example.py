@@ -16,13 +16,13 @@ class PythonPytestSimpleTest(unittest.TestCase):
     #     # self.driver = webdriver.Remote(desired_capabilities=capas)
 
     def test_title(self):
-        """Test the title of our demo page."""
-        self.driver.get("https://demo.testchameleon.com/")
-        assert "Gentellela Alela!" in self.driver.title
+#         """Test the title of our demo page."""
+#         self.driver.get("https://demo.testchameleon.com/")
+#         assert "Gentellela Alela!" in self.driver.title
 
     def tearDown(self):
-        """Cleanup after test."""
-        self.driver.quit()
+#         """Cleanup after test."""
+#         self.driver.quit()
 
 
 if __name__ == "__main__":
