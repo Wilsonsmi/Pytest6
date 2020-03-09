@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 """Simple Selenium WebDriver test that uses TestChameleon Selenium"""
 
-import unittest
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+# import unittest
+# from selenium import webdriver
+# from selenium.webdriver.common.keys import Keys
+# from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
-class PythonPytestSimpleTest(unittest.TestCase):
+class PythonPytestSimpleTest():
     """A simple Selenium example test with Python and pytest."""
 
     # def setUp(self):
@@ -25,5 +25,5 @@ class PythonPytestSimpleTest(unittest.TestCase):
 #         self.driver.quit()
 
 
-if __name__ == "__main__":
-    unittest.main()
+# if __name__ == "__main__":
+#     unittest.main()
